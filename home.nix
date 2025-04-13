@@ -53,7 +53,7 @@
   #  /etc/profiles/per-user/jeremyg/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    SUDO_EDITOR = "/bin/micro";
+    SUDO_EDITOR = "nano";
     # EDITOR = "emacs";
   };
 
