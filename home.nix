@@ -11,11 +11,6 @@
     fishPlugins.grc
     grc
     fish
-    # ls show size
-    (writeShellScriptBin "lsss" ''
-        eza "$@" -l -A --sort size --time-style iso
-    '')
-
     # misc
     megacmd
   ];

@@ -16,12 +16,16 @@
     enable = true;
     interactiveShellInit = ''
       set fish_greeting
+      source ${./../completions/lsss.fish}
     '';
     plugins = [
       { name = "grc"; src = pkgs.fishPlugins.grc.src; }
     ];
     shellAliases = {
       ls = "eza -l --git --icons=always --colour=always --time-style iso $argv";
+    };
+    functions = {
+      lsss = builtins.readFile(./lsss.fish);
     };
   };
 }
