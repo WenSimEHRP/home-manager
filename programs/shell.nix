@@ -23,6 +23,7 @@
     ];
     shellAliases = {
       ls = "eza -l --git --icons=always --colour=always --time-style iso $argv";
+      rm = "trash";
     };
     functions = {
       lsss = builtins.readFile(./lsss.fish);
