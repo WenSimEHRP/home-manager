@@ -19,14 +19,17 @@
       source ${./../completions/lsss.fish}
     '';
     plugins = [
-      { name = "grc"; src = pkgs.fishPlugins.grc.src; }
+      {
+        name = "grc";
+        src = pkgs.fishPlugins.grc.src;
+      }
     ];
     shellAliases = {
       ls = "eza -l --git --icons=always --colour=always --time-style iso";
       rm = "trash";
     };
     functions = {
-      lsss = builtins.readFile(./lsss.fish);
+      lsss = builtins.readFile (./lsss.fish);
     };
   };
 }
