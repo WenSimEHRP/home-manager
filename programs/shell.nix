@@ -22,7 +22,7 @@
       { name = "grc"; src = pkgs.fishPlugins.grc.src; }
     ];
     shellAliases = {
-      ls = "eza -l --git --icons=always --colour=always --time-style iso $argv";
+      ls = "eza -l --git --icons=always --colour=always --time-style iso";
       rm = "trash";
     };
     functions = {
